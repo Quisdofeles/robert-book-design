@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Meta Data-->
+        <title>Table of Contents Web App</title>
+        <meta name="description" content="A private React recipe web app with a masonry grid, live search, and tag filtering; built for browsing a family recipe collection with a clean, minimal UI.">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navigation-->
+        <div id="navigation">
+            <!--Top Header-->
+            <div id="header">
+                <a id="robert-book-design-logo" href="index.html">
+                    <img 
+                    src="images/Logo_Black.webp" 
+                    alt="A high-contrast, brutalist-style logo featuring a massive letter R alongside the name Robert Book and a comprehensive list of design services, including web design, illustration, and branding, in a structured, technical layout.">
+                </a>
+                <a id="header-title" href="index.html">ROBERT BOOK DESIGN</a>
+                <ul id="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li>•</li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li>•</li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li>•</li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+                <!--Hamburger-->
+                <div id="hamburger">☰</div>
+                </div>
+
+            <!--Bottom header-->
+            <div id="breadcrumb-nav">
+            </div>
+        </div>
+ 
+        <!--Dropdown Menu-->
+        <div id="mobile-menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+        <!--Project Title-->
+        <div class="project-title">
+            <div class="project-title-fix"></div>
+            <h1>TABLE OF CONTENTS WEB APP</h1>
+            <div class="gradient-block">
+            </div>
+            <a href="https://tableofcontents.page/" target="_blank" rel="noopener noreferrer">
+                VIEW LIVE SITE
+            </a>
+        </div>
+
+        <!--Porftolio Project-->
+        <div id="project-page" data-label="TABLE OF CONTENTS WEB APP">
+            <!--Table of Contents Objective-->
+            <div id="project-objective" class="project-objective" data-label="OBJECTIVE" data-parent="project-page">
+                <div class="image-block">
+                    <img 
+                    src="images/TableofContents_Objective.webp" 
+                    alt="Wireframe sketches and evolving screen designs for the Table of Contents recipe app, progressing from rough hand-drawn layouts to a refined search and tag filter interface, alongside a high-fidelity recipe grid and expanded recipe detail view.">
+                </div>
+                <div class="text-block">
+                    <div class="text-block-titles">
+                        <h2>01</h2>
+                        <h1>&nbsp;OBJECTIVE</h1>
+                    </div>
+                    <div class="text-block-ruler"></div>
+                    <div class="text-block-copy">
+                        <p>
+                            Table of Contents started as a way to give the Book 
+                            family recipe collection a real home; something more 
+                            usable than a folder of files, and more personal than a 
+                            generic recipe app. The name plays on the family's last 
+                            name and the site's function: a navigable index of 
+                            recipes, like a table of contents in a book.
+                        </p>
+                        <p>
+                            The design direction drew inspiration from sites like 
+                            Delish and Pinterest. These sites focused on visual-first 
+                            browsing where recipes read as a scannable grid of images 
+                            rather than a plain list 
+                            The goal was to bring that same feel to a small, private 
+                            collection: easy to search by name, filter by type, and 
+                            scan visually before committing to one, all without the 
+                            clutter of accounts, logins, or a database to maintain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Table of Contents Ideation-->
+            <div id="project-ideation" class="project-ideation" data-label="IDEATION" data-parent="project-page">
+                <div class="image-block">
+                    <img 
+                    src="images/TableofContents_Ideation.webp" 
+                    alt="Homepage screenshots of Delish, AllRecipes, and Food Network showing visual-first, image-heavy recipe browsing layouts that inspired the design direction for Table of Contents.">
+                </div>
+                <div class="text-block">
+                    <div class="text-block-titles">
+                        <h2>02</h2>
+                        <h1>&nbsp;IDEATION</h1>
+                    </div>
+                    <div class="text-block-ruler"></div>
+                    <div class="text-block-copy">
+                        <p>
+                            The process started with sketching out initial wireframes, 
+                            testing several different layout ideas before settling on 
+                            a single-page web app design. A one-page structure kept 
+                            the experience simple; no navigating between separate 
+                            pages just to search, filter, or browse, everything stays 
+                            in one continuous, scannable view.
+                        </p>
+                        <p>
+                            Once the layout direction felt right, I built high-fidelity 
+                            mockups in Figma to work out the visual details; spacing, 
+                            typography, card proportions; before moving into React to 
+                            start building. The trickiest problem to solve technically 
+                            was the masonry grid itself the goal was left-to-right, row-first 
+                            ordering with staggered card heights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Table of Contents Solution-->
+            <div id="project-solution" class="project-solution" data-label="SOLUTION" data-parent="project-page">
+                <div class="image-block">
+                    <img 
+                    src="images/TableofContents_Solution.webp" 
+                    alt="A full-page mockup of the Table of Contents web app featuring a light, clean, aesthetic, and a structured layout for recipes.">
+                </div>
+                <div class="text-block">
+                    <div class="text-block-titles">
+                        <h2>03</h2>
+                        <h1>&nbsp;SOLUTION</h1>
+                    </div>
+                    <div class="text-block-ruler"></div>
+                    <div class="text-block-copy">
+                        <p>
+                            I'm genuinely happy with how Table of Contents turned out. 
+                            Getting the masonry grid to run true row-first order, 
+                            building a custom dropdown that stays consistent across 
+                            every device, and landing on a clean, pure-white layout 
+                            that lets the food photography do the work were all 
+                            satisfying problems to solve. The project brought together 
+                            React development, state management, and UI/UX decisions 
+                            like the one-page layout.
+                        </p>
+                        <p>
+                            The result is a searchable, filterable recipe collection 
+                            with an expandable detail view showing image, stats, 
+                            ingredients, and instructions, down to copy-to-clipboard 
+                            buttons. It scales fluidly from one column on mobile to 
+                            seven-plus on a wide desktop monitor. I'm proud of the 
+                            finished app, and new recipes get added all the time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <h2>©2026 ROBERT BOOK DESIGN • ALL RIGHTS RESERVED</h2>
+            <h2>POWERED BY <a href="https://robertbookdesign.com" target="_blank" rel="noopener noreferrer">ROBERT BOOK DESIGN</a></h2>
+        </div>
+
+    <!--Java Scripts--> 
+    <script src="Java/breadcrumb.js"></script>
+    <script src="Java/hamburger-menu.js"></script>
+    </body>
+</html>
